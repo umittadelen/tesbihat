@@ -4,9 +4,13 @@
     --bg-color-g: 64;
     --bg-color-b: 90;
 
-    --secondary-color-r: 249;
-    --secondary-color-g: 222;
-    --secondary-color-b: 201;
+    --primary-text-color-r: 249;
+    --primary-text-color-g: 222;
+    --primary-text-color-b: 201;
+
+    --secondary-text-color-r: 255;
+    --secondary-text-color-g: 114;
+    --secondary-text-color-b: 114;
 
     --shadow-color-r: 210;
     --shadow-color-g: 241;
@@ -44,7 +48,22 @@ body {
     height: 76px;
     font-weight: bold;
     font-size: 3.5rem;
-    color: rgb(var(--secondary-color-r), var(--secondary-color-g), var(--secondary-color-b));
+    color: rgb(var(--primary-text-color-r), var(--primary-text-color-g), var(--primary-text-color-b));
+}
+
+p {
+    color: rgb(var(--primary-text-color-r), var(--primary-text-color-g), var(--primary-text-color-b));
+    font-size: 1.2rem;
+}
+
+hl {
+    color: rgb(var(--secondary-text-color-r), var(--secondary-text-color-g), var(--secondary-text-color-b));
+}
+
+.tesbihat-text {
+    margin: 20px;
+    width: 100vh;
+    height: fit-content;
 }
 
 .vakitler{ 
@@ -58,7 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(var(--secondary-color-r), var(--secondary-color-g), var(--secondary-color-b));
+    background-color: rgb(var(--primary-text-color-r), var(--primary-text-color-g), var(--primary-text-color-b));
     text-decoration: None;
     color: rgb(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b));
     font-size: 2.5rem;
@@ -75,7 +94,7 @@ body {
     width: 65vw;
     height: 20vw;
     border-radius: 16px;
-    background-color: rgba(var(--secondary-color-r), var(--secondary-color-g), var(--secondary-color-b), 0.2);
+    background-color: rgba(var(--primary-text-color-r), var(--primary-text-color-g), var(--primary-text-color-b), 0.2);
     z-index: -1;
     transition: all 0.3s;
 }
