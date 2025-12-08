@@ -28,9 +28,8 @@ body {
     background-color: rgb(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b));
     box-sizing: border-box;
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    padding: 20px;
 }
 
 .container {
@@ -63,7 +62,6 @@ hl {
 }
 
 .tesbihat-text {
-    margin: 20px;
     width: 100vh;
     height: fit-content;
 }
