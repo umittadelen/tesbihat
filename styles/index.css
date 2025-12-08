@@ -1,11 +1,27 @@
+:root {
+    --font-family: "Quicksand", "Nunito", sans-serif;
+    --bg-color-r: 58;
+    --bg-color-g: 64;
+    --bg-color-b: 90;
+
+    --secondary-color-r: 249;
+    --secondary-color-g: 222;
+    --secondary-color-b: 201;
+
+    --shadow-color-r: 210;
+    --shadow-color-g: 241;
+    --shadow-color-b: 254;
+}
+
 html, body {
     height: 100%;
     margin: 0;
+    user-select: none;
 }
 
 body {
-    font-family: "Nunito", "Quicksand", sans-serif;
-    background-color: #3A405A;
+    font-family: var(--font-family);
+    background-color: rgb(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b));
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -19,39 +35,75 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    height: 100%;
 }
 
 #header {
     margin-bottom: 20px;
     margin-top: 0;
+    height: 76px;
     font-weight: bold;
     font-size: 3.5rem;
-    color: #F9DEC9;
+    color: rgb(var(--secondary-color-r), var(--secondary-color-g), var(--secondary-color-b));
 }
 
 .vakitler{ 
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: fit-content;
 }
 
 .vakit {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F9DEC9;
+    background-color: rgb(var(--secondary-color-r), var(--secondary-color-g), var(--secondary-color-b));
     text-decoration: None;
-    color: #3A405A;
+    color: rgb(var(--bg-color-r), var(--bg-color-g), var(--bg-color-b));
     font-size: 2.5rem;
     font-weight: 700;
-    border-radius: 15px;
+    border-radius: 16px;
     width: 65vw;
     height: 20vw;
-    box-shadow: 0px 0px 5px #d2f1fe;
+    transition: all 0.3s;
+}
+
+.vakit::after {
+    content: "";
+    position: absolute;
+    width: 65vw;
+    height: 20vw;
+    border-radius: 16px;
+    background-color: rgba(var(--secondary-color-r), var(--secondary-color-g), var(--secondary-color-b), 0.2);
+    z-index: -1;
+    transition: all 0.3s;
 }
 
 .vakit:hover {
-    transform: translateY(-2px) scale(1.05);
-    transition: 0.3s;
-    box-shadow: 0px 0px 30px #d2f1fe;
+    transform: translate(-2px,-2px) scale(1.01);
+    transition: all 0.3s;
+}
+
+.vakit:hover::after {
+    transform: translate(5px,5px);
+    transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+    .vakit {
+        width: 300px;
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    .vakit::after {
+        width: 300px;
+        height: 80px;
+    }
+
+    #header {
+        font-size: 2.5rem;
+        height: auto;
+    }
 }
