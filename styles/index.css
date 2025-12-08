@@ -54,6 +54,7 @@ body {
 p {
     color: rgb(var(--primary-text-color-r), var(--primary-text-color-g), var(--primary-text-color-b));
     font-size: 1.2rem;
+    text-indent: 2rem;
 }
 
 hl {
