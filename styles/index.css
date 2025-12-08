@@ -68,7 +68,7 @@ hl {
     height: fit-content;
 }
 
-.vakitler{ 
+.vakits-container { 
     display: flex;
     flex-direction: column;
     gap: 20px;
