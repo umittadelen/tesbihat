@@ -59,6 +59,7 @@ p {
 
 hl {
     color: rgb(var(--secondary-text-color-r), var(--secondary-text-color-g), var(--secondary-text-color-b));
+    font-style: italic;
 }
 
 .tesbihat-text {
