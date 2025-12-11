@@ -104,7 +104,6 @@ hl {
 #geri {
     position: fixed !important;
     bottom: 50px;
-    transition: top 0.3s ease-out;
 }
 
 .vakit::after {
