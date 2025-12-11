@@ -16,3 +16,16 @@ document.addEventListener("click", (e) => {
         window.location.href = url;
     }, 400);
 });
+
+const box = document.getElementById("geri");
+
+window.addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+    const pageHeight = document.body.scrollHeight;
+    const windowHeight = window.innerHeight;
+
+    const margin = 50;
+    const position = pageHeight - box.offsetHeight - (pageHeight - windowHeight - scroll) - margin;
+
+    box.style.top = position + "px";
+});
