@@ -101,11 +101,6 @@ hl {
     transition: all 0.3s;
 }
 
-#geri {
-    position: fixed !important;
-    bottom: 50px;
-}
-
 .vakit::after {
     content: "";
     position: absolute;
