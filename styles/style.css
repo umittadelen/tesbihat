@@ -12,6 +12,10 @@
     --secondary-text-color-g: 114;
     --secondary-text-color-b: 114;
 
+    --tertiary-text-color-r: 127;
+    --tertiary-text-color-g: 231;
+    --tertiary-text-color-b: 220;
+
     --shadow-color-r: 210;
     --shadow-color-g: 241;
     --shadow-color-b: 254;
@@ -30,19 +34,6 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-}
-
-body.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-body.hide {
-    opacity: 0;
-    transform: translateX(-40px);
 }
 
 .container {
@@ -74,6 +65,11 @@ hl {
     font-style: italic;
 }
 
+hl2 {
+    color: rgb(var(--tertiary-text-color-r), var(--tertiary-text-color-g), var(--tertiary-text-color-b));
+    font-style: italic;
+}
+
 .tesbihat-text {
     width: 100vh;
     height: fit-content;
@@ -99,6 +95,7 @@ hl {
     width: 65vw;
     height: 20vw;
     transition: all 0.3s;
+    user-select: none;
 }
 
 .vakit::after {
