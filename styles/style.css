@@ -13,12 +13,17 @@
     --secondary-text-color-b: 114;
 
     --tertiary-text-color-r: 255;
-    --tertiary-text-color-g: 234;
-    --tertiary-text-color-b: 43;
+    --tertiary-text-color-g: 211;
+    --tertiary-text-color-b: 91;
 
     --shadow-color-r: 210;
     --shadow-color-g: 241;
     --shadow-color-b: 254;
+}
+
+@font-face {
+    font-family: 'DSEG7ClassicMini';
+    src: url('/fonts/DSEG7ClassicMini-Regular.ttf');
 }
 
 html, body {

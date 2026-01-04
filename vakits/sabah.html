@@ -2,15 +2,39 @@
 <html lang="tr-TR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabah Tesbihat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sabah Tesbihatı</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tesbih.css">
 </head>
 <body>
+    <!-- Sidebar Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <!-- Tesbihat Sidebar -->
+    <aside id="counterSidebar" class="counter-sidebar">
+        <div class="sidebar-header">
+            <h2>Tesbih</h2>
+            <button id="closeBtn" class="close-btn">&times;</button>
+        </div>
+        <div id="counterDisplay" class="counter-display">00</div>
+        <div class="counter-buttons">
+            <button id="increment1" class="counter-btn">+1</button>
+            <button id="increment3" class="counter-btn">+3</button>
+            <button id="increment4" class="counter-btn">+4</button>
+            <button id="reset" class="counter-btn reset">Sıfırla</button>
+        </div>
+    </aside>
+
+    <!-- Toggle Button -->
+    <button id="toggleBtn" class="toggle-btn">
+        <span class="toggle-text">Tesbih</span>
+    </button>
+
     <div class="tesbihat-text">
         <p><hl>Sabah namazının farzı kılınıp selâm verildikten sonra,</hl> <hl2>“Allâhümme ente’s-selâmü ve minke’s-selâm, tebârekte yâ ẕe’l-celâli ve’likrâm”</hl2> <hl>denir ve aşağıdaki Salât-ı Münciye Duası, (yani Salâte’n-Tüncînâ) okunur:</hl></p>
         <p><hl2>“Allahümme šalli alâ seyyidinâ Muḥammedin ve ʿalâ âli seyyidinâ Muḥammed. Šalâten tüncînâ bihâ min-cemîʿı’l-ehvâli ve’lâfât. <hl>(“ve’l-âfât” derken avuç içleri yere bakacak şekilde çevrilir, bitince de eski haline getirilir.)</hl> Ve takḍîlenâ bi-hâ cemîʿa’l-ḥâcât. Ve tüṭahhirunâ bi-hâ min-cemîʿı’s-seyyiât. Ve terfeʿunâ bi-hâ ʿındeke aʿle’d-derecât. Ve tübelliğunâ bi-hâ aḳša’l-ğâyât. Min-cemîʿı’lḫayrâti fi’l-ḥayâti ve baʿde’l-memât. Âmin yâ Mucîbe’d-deʿavâti ve’l-ḥamdü lillâhi Rabbi’lʿâlemîn. Âmin”</hl2> <hl>denilir ve eller yüze sürülüp indirilir.</hl></p>
@@ -113,6 +137,6 @@
         Lâ yestevî ašḥâbü’n-nâri ve ašḥâbü’l-Cenneh. Ašḥâbü’l-Cenneti hümü’l-fâizûn. . Lev enzelnâ hâẕe’l-Ḳur’âne ʿalâ cebelin leraeytehû ḫâşiʿan mütešaddian min-ḫaşyetillâh. Ve tilke’l-emsâlü naḍribühâ linnâsi leʿallehüm yetefekkerûn. . Hüvallahü’l-leẕî lâ ilâhe illâ hû. ʿÂlimü’l-ğaybi ve’ş-şe hâdeti. Hüve’r-Raḥmânü’r-Raḥîm. . Hüvallâhü’l-leẕî lâ ilâhe illâ hû. El-Melikü’l-Ḳuddûsü’s-Selâmü’l-Mü’-minü’l-Müheyminü’l-ʿAzîzü’l-Cebbârü’l-Mütekebbir. Sübḥânellâhi ʿammâ yüşrikûn. . 
         Hüvallâhü’l-Ḫàliḳu’l-Bâriü’l-Müšavvirulehü’l Esmâü’l-Ḥüsnâ. Yüsebbiḥu lehû mâ fi’s-semâvâti ve’l-arḍi. Vehüve’l-ʿAzîzü’l-Ḥakîm.”</hl2></p>
     </div>
-    <script src="../script.js"></script>
+    <script src="../scripts/tesbih.js"></script>
 </body>
 </html>
