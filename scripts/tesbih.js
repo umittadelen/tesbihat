@@ -4,6 +4,7 @@ const counterSidebar = document.getElementById('counterSidebar');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
 const toggleBtn = document.getElementById('toggleBtn');
 const closeBtn = document.getElementById('closeBtn');
+const positionBtn = document.getElementById('positionBtn');
 
 // Load counter from localStorage
 const savedCounter = localStorage.getItem('tesbihatCounter');
@@ -12,6 +13,13 @@ if (savedCounter) {
     counterDisplay.textContent = String(counter).padStart(2, '0');
 } else {
     counterDisplay.textContent = '00';
+}
+
+// Load sidebar position from localStorage
+const savedPosition = localStorage.getItem('sidebarPosition');
+if (savedPosition === 'left') {
+    counterSidebar.classList.add('left');
+    toggleBtn.classList.add('left');
 }
 
 // Toggle sidebar open/close
@@ -30,6 +38,19 @@ closeBtn.addEventListener('click', () => {
 sidebarOverlay.addEventListener('click', () => {
     counterSidebar.classList.remove('open');
     sidebarOverlay.classList.remove('open');
+});
+
+// Toggle sidebar position (left/right)
+positionBtn.addEventListener('click', () => {
+    counterSidebar.classList.toggle('left');
+    toggleBtn.classList.toggle('left');
+    
+    // Save position to localStorage
+    if (counterSidebar.classList.contains('left')) {
+        localStorage.setItem('sidebarPosition', 'left');
+    } else {
+        localStorage.setItem('sidebarPosition', 'right');
+    }
 });
 
 // Increment functions

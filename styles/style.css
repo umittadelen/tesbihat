@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: 'DSEG7ClassicMini';
-    src: url('/tesbihat/fonts/DSEG7ClassicMini-Regular.ttf');
+    src: url('../fonts/DSEG7ClassicMini-Regular.ttf');
 }
 
 html, body {
